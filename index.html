@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego de adivinar el número</title>
+</head>
+
+<body>
+    <h1>Adivina el número</h1>
+
+    <div class="dificultad">
+        <h4>Selecciona la difícultad</h4>
+        <label>
+            <input class="facil" type="radio" name="opcion" value="fácil" onchange="activarSeccion()"> Fácil
+        </label>
+        <label>
+            <input class="intermedio" type="radio" name="opcion" value="intermedio" onchange="activarSeccion()"> Intermedio
+        </label>
+        <label>
+            <input class="dificil" type="radio" name="opcion" value="dificil" onchange="activarSeccion()"> Difícil
+        </label>
+    </div>
+
+
+    <section class="seccion1">
+        <p>Introduce un número entre 1 y 100:</p>
+        <input type="number" id="numeroEntrada1">
+        <button onclick="chequearResultadoFacil()">Comprobar</button>
+        <p id="mensaje1"></p>
+        <p id="intento1"></p>
+        <button onclick="reset1()" id="reset1">Resetear</button>
+    </section>
+
+    <section class="seccion2">
+        <p>Introduce un número entre 1 y 500:</p>
+        <input type="number" id="numeroEntrada2">
+        <button onclick="chequearResultadoInter()">Comprobar</button>
+        <p id="mensaje2"></p>
+        <p id="intento2"></p>
+        <button onclick="reset2()" id="reset2">Resetear</button>
+    </section>
+
+    <section class="seccion3">
+        <p>Introduce un número entre 1 y 1000:</p>
+        <input type="number" id="numeroEntrada3">
+        <button onclick="chequearResultadoDif()">Comprobar</button>
+        <p id="mensaje3"></p>
+        <p id="intento3"></p>
+        <button onclick="reset3()" id="reset3">Resetear</button>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
