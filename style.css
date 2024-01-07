@@ -38,7 +38,8 @@ body {
 
   .seccion1,
   .seccion2,
-  .seccion3 {
+  .seccion3,
+  .seccion4 {
     display: none;
   }
 
