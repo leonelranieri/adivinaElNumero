@@ -10,29 +10,33 @@
 </head>
 
 <body>
-    <h1>Adiviná el número</h1>
+    <div class="navbar">
+        <div class="responsive">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+    
+    <h1 id="titulo">Adiviná el número</h1>
 
     <div class="dificultad">
-        <h4>Seleccioná la difícultad</h4>
+        <h2>Seleccioná la difícultad</h2>
         <label>
-            <input class="facil" type="radio" name="opcion" value="fácil" 
-                onchange="activarSeccion()"> Fácil
+            <input class="facil" type="radio" name="opcion" value="fácil" onchange="activarSeccion()"> Fácil
         </label>
         <label>
-            <input class="intermedio" type="radio" name="opcion" value="intermedio" 
-                onchange="activarSeccion()"> Intermedio
+            <input class="intermedio" type="radio" name="opcion" value="intermedio" onchange="activarSeccion()">
+            Intermedio
         </label>
         <label>
-            <input class="dificil" type="radio" name="opcion" value="dificil" 
-                onchange="activarSeccion()"> Difícil
+            <input class="dificil" type="radio" name="opcion" value="dificil" onchange="activarSeccion()"> Difícil
         </label>
         <label>
-            <input class="enteros" type="radio" name="opcion" value="enteros"  
-                onchange="activarSeccion()"> Números Enteros
+            <input class="enteros" type="radio" name="opcion" value="enteros" onchange="activarSeccion()"> Números
+            Enteros
         </label>
         <label>
-            <input class="decimales" type="radio" name="opcion" value="decimales"  
-                onchange="activarSeccion()"> Números Decimales
+            <input class="decimales" type="radio" name="opcion" value="decimales" onchange="activarSeccion()"> Números
+            Decimales
         </label>
     </div>
 
@@ -42,28 +46,28 @@
         <input type="number" id="numeroEntrada1">
         <button onclick="chequearResultadoFacil()">Comprobar</button>
         <p id="mensaje1"></p>
-        <h4>Cantidad de intentos: <p id="intento1">0</p></h4> 
-        <button onclick="reset1()" id="reset1">Resetear</button> 
+        <h4>Cantidad de intentos: <p id="intento1">0</p>
+        </h4>
+        <button onclick="reset1()" id="reset1">Resetear</button>
         <div class="sub1">
-            <button class="registro" id="registro1" 
-                onclick="registrarNombre1()">
+            <button class="registro" id="registro1" onclick="registrarNombre1()">
                 Registrar puntaje</button>
             <ol class="lista" id="lista1" style="text-align: center;"></ol>
         </div>
-    </section> 
+    </section>
 
     <section class="seccion2">
         <p>Introduce un número entre 1 y 500:</p>
         <input type="number" id="numeroEntrada2">
         <button onclick="chequearResultadoInter()">Comprobar</button>
         <p id="mensaje2"></p>
-        <h4>Cantidad de intentos: <p id="intento2">0</p></h4>
+        <h4>Cantidad de intentos: <p id="intento2">0</p>
+        </h4>
         <button onclick="reset2()" id="reset2">Resetear</button>
         <div class="sub1">
-            <button class="registro" id="registro2" 
-                    onclick="registrarNombre2()"">
+            <button class="registro" id="registro2" onclick="registrarNombre2()"">
                     Registrar puntaje</button>
-            <ol class="lista" id="lista2" style="text-align: center;"></ol>
+            <ol class=" lista" id="lista2" style="text-align: center;"></ol>
         </div>
     </section>
 
@@ -72,11 +76,11 @@
         <input type="number" id="numeroEntrada3">
         <button onclick="chequearResultadoDif()">Comprobar</button>
         <p id="mensaje3"></p>
-        <h4>Cantidad de intentos: <p id="intento3">0</p></h4>
+        <h4>Cantidad de intentos: <p id="intento3">0</p>
+        </h4>
         <button onclick="reset3()" id="reset3">Resetear</button>
         <div class="sub1">
-            <button class="registro" id="registro3" 
-                onclick="registrarNombre3()">
+            <button class="registro" id="registro3" onclick="registrarNombre3()">
                 Registrar puntaje</button>
             <ol class="lista" id="lista3" style="text-align: center;"></ol>
         </div>
@@ -87,11 +91,11 @@
         <input type="number" id="numeroEntrada4">
         <button onclick="chequearResultadoEnteros()">Comprobar</button>
         <p id="mensaje4"></p>
-        <h4>Cantidad de intentos: <p id="intento4">0</p></h4>
+        <h4>Cantidad de intentos: <p id="intento4">0</p>
+        </h4>
         <button onclick="reset4()" id="reset4">Resetear</button>
         <div class="sub1">
-            <button class="registro" id="registro4" 
-                onclick="registrarNombre4()">
+            <button class="registro" id="registro4" onclick="registrarNombre4()">
                 Registrar puntaje</button>
             <ol class="lista" id="lista4" style="text-align: center;"></ol>
         </div>
@@ -102,16 +106,47 @@
         <input type="number" id="numeroEntrada5">
         <button onclick="chequearResultadoDecimales()">Comprobar</button>
         <p id="mensaje5"></p>
-        <h4>Cantidad de intentos: <p id="intento5">0</p></h4> 
-        <button onclick="reset5()" id="reset5">Resetear</button> 
+        <h4>Cantidad de intentos: <p id="intento5">0</p>
+        </h4>
+        <button onclick="reset5()" id="reset5">Resetear</button>
         <div class="sub1">
-            <button class="registro" id="registro5" 
-                onclick="registrarNombre5()">
+            <button class="registro" id="registro5" onclick="registrarNombre5()">
                 Registrar puntaje</button>
             <ol class="lista" id="lista5" style="text-align: center;"></ol>
         </div>
     </section>
     
+    <section class="animacion">
+        <div class="caja linear">11</div>
+        <div class="caja ease">-79</div>
+        <div class="caja ease-in">3.14</div>
+        <div class="caja ease-out">233</div>
+        <div class="caja ease-in-out">983</div>
+    </section>
+
+    <section class="animacion1">
+        <div class="caja linear">-18</div>
+        <div class="caja ease">101</div>
+        <div class="caja ease-in">51</div>
+        <div class="caja ease-out">989</div>
+        <div class="caja ease-in-out">2.74</div>
+    </section>
+
+    <section class="animacion2">
+        <div class="caja linear">22</div>
+        <div class="caja ease">3.21</div>
+        <div class="caja ease-in">-69</div>
+        <div class="caja ease-out">555</div>
+        <div class="caja ease-in-out">818</div>
+    </section>
+
+    <section class="animacion3">
+        <div class="caja linear">1.33</div>
+        <div class="caja ease">200</div>
+        <div class="caja ease-in">17</div>
+        <div class="caja ease-out">42</div>
+        <div class="caja ease-in-out">-99</div>
+    </section>
 
     <script src="script.js"></script>
 </body>

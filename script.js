@@ -367,3 +367,24 @@ function renderizarLista(lista, puntajesDeUsuarios, registro) {
     }
     registro.style.display = 'none';
 }
+
+// Funciones para cambiar el color del titulo
+function obtenerColorAleatorio() {
+    const letras = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letras[Math.floor(Math.random() * 16)];
+    }
+    
+    return color;
+  }
+
+  // Función para cambiar el color del h1 cada cierto tiempo
+  function cambiarColor() {
+    const h1 = document.getElementById('titulo');
+    const nuevoColor = obtenerColorAleatorio();
+    h1.style.color = nuevoColor;
+  }
+
+  // Cambia el color cada 3 segundos (3000 milisegundos)
+  setInterval(cambiarColor, 3000);
