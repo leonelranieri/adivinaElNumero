@@ -259,7 +259,7 @@ function reset(intentos, numeroEntrada, mensaje, intento, registro) {
     intentos = 0;
     numeroEntrada.disabled = false;
     numeroEntrada.value = "";
-    mensaje.textContent = "";
+    mensaje.textContent = "¡Vamos a jugar!";
     intento.textContent = "";
     registro.style.display = 'none';
     return intentos;

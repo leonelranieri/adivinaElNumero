@@ -10,11 +10,6 @@
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="responsive">
-            <i class="fa fa-bars"></i>
-        </div>
-    </div>
     
     <h1 id="titulo">Adiviná el número</h1>
 
@@ -45,10 +40,10 @@
         <p>Introduce un número entre 1 y 100:</p>
         <input type="number" id="numeroEntrada1">
         <button onclick="chequearResultadoFacil()">Comprobar</button>
-        <p id="mensaje1"></p>
+        <p id="mensaje1">¡Vamos a jugar!</p>
         <h4>Cantidad de intentos: <p id="intento1">0</p>
         </h4>
-        <button onclick="reset1()" id="reset1">Resetear</button>
+        <button class="reset" onclick="reset1()" id="reset1">Nuevo Juego</button>
         <div class="sub1">
             <button class="registro" id="registro1" onclick="registrarNombre1()">
                 Registrar puntaje</button>
@@ -60,10 +55,10 @@
         <p>Introduce un número entre 1 y 500:</p>
         <input type="number" id="numeroEntrada2">
         <button onclick="chequearResultadoInter()">Comprobar</button>
-        <p id="mensaje2"></p>
+        <p id="mensaje2">¡Vamos a jugar!</p>
         <h4>Cantidad de intentos: <p id="intento2">0</p>
         </h4>
-        <button onclick="reset2()" id="reset2">Resetear</button>
+        <button class="reset" onclick="reset2()" id="reset2">nuevo Juego</button>
         <div class="sub1">
             <button class="registro" id="registro2" onclick="registrarNombre2()"">
                     Registrar puntaje</button>
@@ -75,10 +70,10 @@
         <p>Introduce un número entre 1 y 1000:</p>
         <input type="number" id="numeroEntrada3">
         <button onclick="chequearResultadoDif()">Comprobar</button>
-        <p id="mensaje3"></p>
+        <p id="mensaje3">¡Vamos a jugar!</p>
         <h4>Cantidad de intentos: <p id="intento3">0</p>
         </h4>
-        <button onclick="reset3()" id="reset3">Resetear</button>
+        <button class="reset" onclick="reset3()" id="reset3">Nuevo Juego</button>
         <div class="sub1">
             <button class="registro" id="registro3" onclick="registrarNombre3()">
                 Registrar puntaje</button>
@@ -90,10 +85,10 @@
         <p>Introduce un número entre -100 y -1 y entre 1 y 100:</p>
         <input type="number" id="numeroEntrada4">
         <button onclick="chequearResultadoEnteros()">Comprobar</button>
-        <p id="mensaje4"></p>
+        <p id="mensaje4">¡Vamos a jugar!</p>
         <h4>Cantidad de intentos: <p id="intento4">0</p>
         </h4>
-        <button onclick="reset4()" id="reset4">Resetear</button>
+        <button class="reset" onclick="reset4()" id="reset4">Nuevo Juego</button>
         <div class="sub1">
             <button class="registro" id="registro4" onclick="registrarNombre4()">
                 Registrar puntaje</button>
@@ -105,10 +100,10 @@
         <p>Introduce un número entre 1 y 100:</p>
         <input type="number" id="numeroEntrada5">
         <button onclick="chequearResultadoDecimales()">Comprobar</button>
-        <p id="mensaje5"></p>
+        <p id="mensaje5">¡Vamos a jugar!</p>
         <h4>Cantidad de intentos: <p id="intento5">0</p>
         </h4>
-        <button onclick="reset5()" id="reset5">Resetear</button>
+        <button class="reset" onclick="reset5()" id="reset5">Nuevo Juego</button>
         <div class="sub1">
             <button class="registro" id="registro5" onclick="registrarNombre5()">
                 Registrar puntaje</button>
@@ -116,36 +111,40 @@
         </div>
     </section>
     
-    <section class="animacion">
-        <div class="caja linear">11</div>
-        <div class="caja ease">-79</div>
-        <div class="caja ease-in">3.14</div>
-        <div class="caja ease-out">233</div>
-        <div class="caja ease-in-out">983</div>
+    <section class="animacionIzq">
+        <div class="animacion">
+            <div class="caja linear">11</div>
+            <div class="caja ease">-79</div>
+            <div class="caja ease-in">3.14</div>
+            <div class="caja ease-out">233</div>
+            <div class="caja ease-in-out">983</div>
+        </div>
+    
+        <div class="animacion1">
+            <div class="caja linear">-18</div>
+            <div class="caja ease">101</div>
+            <div class="caja ease-in">51</div>
+            <div class="caja ease-out">989</div>
+            <div class="caja ease-in-out">2.74</div>
+        </div>
     </section>
 
-    <section class="animacion1">
-        <div class="caja linear">-18</div>
-        <div class="caja ease">101</div>
-        <div class="caja ease-in">51</div>
-        <div class="caja ease-out">989</div>
-        <div class="caja ease-in-out">2.74</div>
-    </section>
-
-    <section class="animacion2">
-        <div class="caja linear">22</div>
-        <div class="caja ease">3.21</div>
-        <div class="caja ease-in">-69</div>
-        <div class="caja ease-out">555</div>
-        <div class="caja ease-in-out">818</div>
-    </section>
-
-    <section class="animacion3">
-        <div class="caja linear">1.33</div>
-        <div class="caja ease">200</div>
-        <div class="caja ease-in">17</div>
-        <div class="caja ease-out">42</div>
-        <div class="caja ease-in-out">-99</div>
+    <section class="animacionDer">
+        <div class="animacion2">
+            <div class="caja linear">22</div>
+            <div class="caja ease">3.21</div>
+            <div class="caja ease-in">-69</div>
+            <div class="caja ease-out">555</div>
+            <div class="caja ease-in-out">818</div>
+        </div>
+    
+        <div class="animacion3">
+            <div class="caja linear">1.33</div>
+            <div class="caja ease">200</div>
+            <div class="caja ease-in">17</div>
+            <div class="caja ease-out">42</div>
+            <div class="caja ease-in-out">-99</div>
+        </div>
     </section>
 
     <script src="script.js"></script>

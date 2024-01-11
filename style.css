@@ -1,46 +1,59 @@
 body {
   text-align: center;
-  background-color: violet;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: violet;
+  font-size: 1.2em;
+  justify-content: center;
+  padding: 0.8em;
 }
 
 h1 {
   color: #333;
-  font-size: 65px;
-  transition: color 0.5s ease;
+  font-size: 5vw;
+  transition: color 0.3s ease;
+  -webkit-text-stroke: 0.02em black;
 }
-
 
 h2 {
   color: #333;
-  font-size: 25px;
+  font-size: 3vw;
+}
 
+h4 {
+  position: relative;
+  right: 20px;
+}
+
+.dificultad {
+  padding: 2vw;
+  margin-top: -3.5vw;
+  margin-bottom: 2.5vw;
+  font-size: 1.5vw;
 }
 
 input {
-  padding: 5px;
+  padding: 0.6vw;
+  font-size: 1.5vw;
 }
 
 button {
-  padding: 8px 12px;
+  padding: 0.8vw 1.2vw;
   background-color: #4CAF50;
   color: white;
   border: none;
-  font-size: 16px;
+  font-size: 1.5vw;
   cursor: pointer;
 }
 
 #mensaje {
   color: #333;
   font-family: Arial, sans-serif;
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 1.8vw;
+  margin-top: 2vw;
 }
 
-.dificultad {
-  padding: 10px;
-  margin-top: -35px;
-  margin-bottom: 25px;
+p {
+  font-size: 1.5vw;
 }
 
 .seccion1,
@@ -50,112 +63,181 @@ button {
 .seccion5,
 .registro {
   display: none;
+  justify-content: center;
 }
 
 .sub1 {
-  margin-top: 25px;
+  margin-top: 1.5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-h3 {
-  position: relative;
-  right: 20px;
+.reset,
+.registro {
+  justify-self: center;
 }
 
 .lista {
-  margin-top: -10px;
+  margin-top: -1.2vw;
   position: relative;
-  right: 30px;
+  right: 1.5vw;
 }
 
- /* Define la animación llamada 'moverDesdeArriba' */
- @keyframes moverDesdeArriba {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-.animacion {
+.animacionIzq {
   position: absolute;
-  top: 68px;
-  width: 200px;
-  margin-right: 10px;
-  height: 350px;
+  top: 5vh;
+  width: 20vw;
+  margin-right: 1vw;
+  height: 35vh;
 }
 
-.animacion1 {
+.animacionDer {
   position: absolute;
-  left: 150px;
-  bottom: 50px;
-  width: 200px;
-  margin-right: 10px;
-  height: 350px;
+  left: 75vw;
+  top: 5vh;
+  width: 20vw;
+  margin-right: 1vw;
+  height: 35vh;
 }
 
-.animacion2 {
-  position: absolute;
-  left: 990px;
-  top: 68px;
-  width: 200px;
-  margin-right: 10px;
-  height: 350px;
-}
-
-.animacion3 {
-  position: absolute;
-  left: 1120px;
-  bottom: 50px;
-  width: 200px;
-  margin-right: 10px;
-  height: 350px;
-}
-
-@keyframes moverDesdeDerecha {
-  from {
-    transform: translateX(100px);
+/* Estilos para pantallas grandes */
+@media only screen and (min-width: 768px) {
+  body {
+    padding: 1.5em;
+    /* Aumenta el padding del body para pantallas grandes */
   }
-  to {
-    transform: translateX(0);
+
+  h1 {
+    font-size: 3.5vw;
+    /* Ajusta el tamaño del h1 para pantallas grandes */
   }
-}
 
-/* Aplica la animación al div con la clase 'caja' */
-.caja {
-  width: 75px;
-  height: 75px;
-  position: relative;
-  font-size: 45px; 
-}
+  h2 {
+    font-size: 2vw;
+    /* Ajusta el tamaño del h2 para pantallas grandes */
+  }
 
-.linear {
-  color: sienna;
-  animation: moverDesdeDerecha 2s linear infinite alternate;
-}
+  input {
+    padding: 0.8vw;
+    /* Ajusta el padding del input para pantallas grandes */
+    font-size: 1.2vw;
+    /* Ajusta el tamaño del font del input para pantallas grandes */
+  }
 
-.ease {
-  color: teal;
-  animation: moverDesdeDerecha 2s ease infinite alternate;
-}
+  /*.animacionIzq,
+    .animacionDer {
+        position: absolute;
+        top: 5vh;
+        margin-right: 1vw;
+    }
 
-.ease-in {
-  color: crimson;
-  animation: moverDesdeDerecha 2s ease-in infinite alternate;
-}
+    .animacion,
+    .animacion1,
+    .animacion2,
+    .animacion3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
-.ease-out {
-  color: darkgoldenrod;
-  animation: moverDesdeDerecha 2s ease-out infinite alternate;
-}
+    .caja {
+        width: 100px;
+        height: 50px; 
+        margin: 5px;
+        text-align: center;
+    }*/
 
-.ease-in-out {
-  color: darkolivegreen;
-  animation: moverDesdeDerecha 2s ease-in-out infinite alternate;
-}
+  /* Estilos comunes para animaciones y cajas */
+  .animacionIzq,
+  .animacionDer {
+    position: absolute;
+    top: 5vh;
+    margin-right: 1vw;
+  }
+
+  .animacion,
+  .animacion1,
+  .animacion2,
+  .animacion3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .caja {
+    width: 100px;
+    height: 50px;
+    margin: 5px;
+    text-align: center;
+    font-size: 2.5vw;
+  }
 
 
+  @keyframes moverDesdeDerecha {
+    from {
+      transform: translateX(8vw);
+    }
 
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .linear {
+    color: sienna;
+    animation: moverDesdeDerecha 2s linear infinite alternate;
+    font-size: 2.5vw;
+  }
+
+  .ease {
+    color: teal;
+    animation: moverDesdeDerecha 2s ease infinite alternate;
+    font-size: 2.5vw;
+  }
+
+  .ease-in {
+    color: crimson;
+    animation: moverDesdeDerecha 2s ease-in infinite alternate;
+    font-size: 2.5vw;
+  }
+
+  .ease-out {
+    color: darkgoldenrod;
+    animation: moverDesdeDerecha 2s ease-out infinite alternate;
+    font-size: 2.5vw;
+  }
+
+  .ease-in-out {
+    color: darkolivegreen;
+    animation: moverDesdeDerecha 2s ease-in-out infinite alternate;
+    font-size: 2.5vw;
+  }
+
+  /* Estilos para pantallas medianas */
+  @media only screen and (max-width: 680px) {
+    body {
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 4vw;
+    }
+
+    h2 {
+      font-size: 2.5vw;
+    }
+
+    input {
+      padding: 0.7vw;
+      font-size: 1.3vw;
+    }
+
+    .animacionIzq,
+    .animacionDer {
+      top: 5vh;
+      width: 15vw;
+      margin-right: 1vw;
+      height: 25vh;
+    }
+  }
